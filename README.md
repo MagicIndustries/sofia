@@ -26,6 +26,51 @@ Keep track of key players in a subject, both people and organizations, and easil
 
 Explore your own knowledge, moving through relationships, managing your day to day learning and discovering news, new related concepts and the latest world / industry news about whatever you’re looking at. Easily craft searches on Google and research search engines based on the visible nodes in front of you.
 
+## Browser Plugin
+The browser plugin works like the Evernote Web Clipper, allowing you to save articles, videos and websites to your Sofia knowledge graphs, and manually specify relationships to existing nodes in Sofia.
+
+## Evernote Importer
+Imports knowledge nodes from Evernote, creating nodes, relationships and tags based on settings and Evernote tags and keywords.
+
+## Structured Data Importer
+Imports notes knowledge nodes from CSV / XML, creating nodes, relationships and tags based on a defined fieldset.
+
+## Architecture
+Unity Interface, talking to a Node.js API on an AWS EC2 instance.
+
+Browser plugins will usee HTTP/REST against the same interface.
+UI Layout, settings stored in client with optional server backup / transport.
+
+Currently aimed at VR Headsets like Vive and Oculus Rift, and MR Headsets like Hololens, Meta2 and Magic Leap.
+
+## Current State
+- Data Schema, relationship structure and database setup (Neo4J) all exist.
+- server / backend code and API exists
+- Evernote Importer exists as a node script.
+- Structured Data Importer doesn’t exist but would take a day or two to tie in to the Evernote importer.
+- Interface is in design, needs some sketching and a little discussion with a unity guru / technical artists / Unity UX engineer.
+- Browser plugin is approx 50% compleete
+- Needs a scaling setup if offered as SaaS, less if standalone application
+
+## To Get to MVP
+**Resources**
+- Full Stack Javascript Developer (a) Unity Developer (b) (Toby Tremayne)
+- UI / 3D Artist (c)
+- Technical Artist (d)
+- Node / AWS Service Integration UI Technical Design (Toby Tremayne)
+- Art & UI
+- Interface Build (Toby Tremayne)
+- Browser Plugins (Toby Tremayne)
+- Importers (Toby Tremayne)
+
+Plus testing / iteration / deployment
+(a) 1-2 weeks
+(d) 3-4 weeks (b) 1 week
+(c) 2-3 weeks
+(a) 1-2 weeks (b) 2-3 weeks (c) 2-3 weeks (a) 2-3 weeks
+(a) 2-3 weeks
+Total Duration Estimate: 2-3 months
+
 ## Example Database Graph
 ![alt text](/assets/graph.png "Example Graph")
 
